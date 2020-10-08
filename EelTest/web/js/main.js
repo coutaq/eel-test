@@ -1,6 +1,6 @@
 eel.expose(loadImage);
 function readURL(input) {
-    alert(input)
+    alert(input);
     if (input.files && input.files[0]) {
         var reader = new FileReader();
 
@@ -16,10 +16,8 @@ function readURL(input) {
 }
 
 function loadImage(image){
-    alert(image)
-    $('#blah')
-        .attr('src', image)
-        .width(image.width)
-        .height(image.height);
+    alert(image);
+    $('#fileInput')
+    .val = image;
 }
 
