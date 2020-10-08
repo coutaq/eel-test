@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Test</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="text/javascript">
+          eel.expose(say_hello_js); // Expose this function to Python
+          function say_hello_js(x) {
+            console.log("Hello from " + x);
+          }
+    
+          say_hello_js("Javascript World!");
+          eel.say_hello_py("Javascript World!"); // Call a Python function
+        </script>
+    </head>
+    <body>
+        <div id="fileSelector">
+            <img src="#" alt="" id="blah">
+            <label for="file">Choose file to upload</label>
+            <label class="custom-file-upload">
+                <input type="file" accept="image/*" onchange="readURL(this);"/>
+                Upload
+            </label>
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+</html>

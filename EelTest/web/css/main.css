@@ -1,0 +1,34 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+#fileSelector{
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#file{
+    border: 2px solid black;
+    padding: 0.01em 16px;
+    border-radius: 16px;
+    
+}
+#blah{
+    max-width: 35vw;
+    max-height: 35vw;
+}
